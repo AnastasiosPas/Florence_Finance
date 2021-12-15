@@ -237,12 +237,16 @@ a:hover {
   vertical-align: top;
   color: #5b87ff;
   letter-spacing: 0px;
+  transition: 2s;
 }
 
 .subtitle span {
   color: #95d6f3;
 }
 
+.subtitle:hover {
+  transform: scale(1.2);
+}
 // ------- The three Pools cards ------------------------------------------------------
 
 .pools {
