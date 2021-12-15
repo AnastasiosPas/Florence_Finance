@@ -107,6 +107,7 @@ a:hover {
   line-height: 44px;
   vertical-align: top;
   color: #5b87ff;
+  letter-spacing: 0px;
 }
 
 .subtitle span {
@@ -127,7 +128,7 @@ a:hover {
   font-family: "Nunito Sans";
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: normal;
+  letter-spacing: 0px;
   line-height: 50px;
   color: #ffffff;
   vertical-align: top;
@@ -187,6 +188,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 29px;
+  letter-spacing: 0px;
 }
 
 .cardlist .rightcol {
@@ -196,6 +198,7 @@ li {
   letter-spacing: 0.5px;
   color: #ffffff;
   vertical-align: top;
+  letter-spacing: 0px;
 }
 
 hr, .lastline {
