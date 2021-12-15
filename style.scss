@@ -10,122 +10,122 @@ body {
 //-------------------------------------RESPONSIVE DESIGN STYLING ----------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
 
-@media screen and (max-width: 750px) {
-  //--------------------------------------------------------------------max-width: 600px
-  body {
-    width: 100%;
-  }
-  .cards {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 100px;
-  }
+// @media screen and (max-width: 750px) {
+//   //--------------------------------------------------------------------max-width: 600px
+//   body {
+//     width: 100%;
+//   }
+//   .cards {
+//     text-align: center;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     margin-top: 100px;
+//   }
 
-  .description {
-    transform: scale(0.6);
-    position: absolute;
-    top: -150px;
-    max-width: max-content;
-  }
-  .title p,
-  .thesubtitle {
-    position: relative;
-    left: -360px;
-    max-width: max-content;
-  }
-  footer .allfooter {
-    width: auto;
-    padding-left: 30px;
-    margin-top: 600px;
-  }
-  .pools {
-    position: relative;
-    top: 700px;
-    max-width: 500px;
-    height: 2300px;
-  }
-  .modalwallet {
-    display: none;
-    position: fixed;
-    top: 188px;
-    left: 230px;
-    width: 376px;
-    height: 548px;
-    z-index: 2;
-    animation: fadeIn 0.5s;
-  }
-  // .pools > p {
-  //   padding-left: 80px;
-  //   margin-top: -253px;
-  //   margin-bottom: -100px;
-  //   padding-top: 150px;
-  // }
-}
+//   .description {
+//     transform: scale(0.6);
+//     position: absolute;
+//     top: -150px;
+//     max-width: max-content;
+//   }
+//   .title p,
+//   .thesubtitle {
+//     position: relative;
+//     left: -360px;
+//     max-width: max-content;
+//   }
+//   footer .allfooter {
+//     width: auto;
+//     padding-left: 30px;
+//     margin-top: 600px;
+//   }
+//   .pools {
+//     position: relative;
+//     top: 700px;
+//     max-width: 500px;
+//     height: 2300px;
+//   }
+//   .modalwallet {
+//     display: none;
+//     position: fixed;
+//     top: 188px;
+//     left: 230px;
+//     width: 376px;
+//     height: 548px;
+//     z-index: 2;
+//     animation: fadeIn 0.5s;
+//   }
+//   // .pools > p {
+//   //   padding-left: 80px;
+//   //   margin-top: -253px;
+//   //   margin-bottom: -100px;
+//   //   padding-top: 150px;
+//   // }
+// }
 
-@media screen and (max-width: 1130px) and (min-width: 751px) {
-  //------------------------------------------------------------------------601px - 1130px
-  body {
-    width: 100%;
-  }
+// @media screen and (max-width: 1130px) and (min-width: 751px) {
+//   //------------------------------------------------------------------------601px - 1130px
+//   body {
+//     width: 100%;
+//   }
 
-  .cards {
-    transform: scale(0.8);
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .tabs {
-    padding-top: 70px;
-  }
-  .walletbtn {
-    margin-top: 50px;
-  }
-  .description {
-    transform: scale(0.8);
-  }
-  .subtitle {
-    max-width: 680px;
-  }
-  footer .allfooter {
-    width: auto;
-    padding-left: 30px;
-    margin-top: 300px;
-  }
-  .pools {
-    position: relative;
-    top: 700px;
-    max-width: fit-content;
-    height: 1200;
-  }
-  .pools > p {
-    padding-left: 80px;
-    margin-top: -253px;
-    margin-bottom: -100px;
-  }
-  .modalwallet {
-    display: none;
-    position: fixed;
-    top: 188px;
-    left: 230px;
-    width: 376px;
-    height: 548px;
-    z-index: 2;
-    animation: fadeIn 0.5s;
-  }
-}
+//   .cards {
+//     transform: scale(0.8);
+//     text-align: center;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//   }
+//   .tabs {
+//     padding-top: 70px;
+//   }
+//   .walletbtn {
+//     margin-top: 50px;
+//   }
+//   .description {
+//     transform: scale(0.8);
+//   }
+//   .subtitle {
+//     max-width: 680px;
+//   }
+//   footer .allfooter {
+//     width: auto;
+//     padding-left: 30px;
+//     margin-top: 300px;
+//   }
+//   .pools {
+//     position: relative;
+//     top: 700px;
+//     max-width: fit-content;
+//     height: 1200;
+//   }
+//   .pools > p {
+//     padding-left: 80px;
+//     margin-top: -253px;
+//     margin-bottom: -100px;
+//   }
+//   .modalwallet {
+//     display: none;
+//     position: fixed;
+//     top: 188px;
+//     left: 230px;
+//     width: 376px;
+//     height: 548px;
+//     z-index: 2;
+//     animation: fadeIn 0.5s;
+//   }
+// }
 
-@media screen and (min-width: 1131px) {
-  //-----------------------------------------------------------------------min-width: 1001px
-  body {
-    width: 100%;
-  }
-  .pools {
-    max-width: 100%;
-  }
-}
+// @media screen and (min-width: 1131px) {
+//   //-----------------------------------------------------------------------min-width: 1001px
+//   body {
+//     width: 100%;
+//   }
+//   .pools {
+//     max-width: 100%;
+//   }
+// }
 
 // ----------------------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------------------------------------
@@ -338,7 +338,7 @@ hr {
   font-family: 'Nunito Sans';
   @extend .headerFontStyle;
   font-weight: 800;
-  letter-spacing: 0.923077px;
+  letter-spacing: normal;
   vertical-align: top;
   line-height: 16px;
   background-color: #4352ff;
