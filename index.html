@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Finance by Anastasios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani&family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./build/style.css">
+    <script type="text/javascript" src="./script.js" ></script>
+</head>
+<body>
+    
+ <!-- -------------- Header: logo, navbar and wallet button ------------------------ -->
+
+<header>
+    <div class="header">
+        <div class="logoandname">
+            <img src = "./images/Florencelogo_purple Copy.svg" alt="Company Logo" class="logo"/>
+            <img src = "./images/Group@2x.svg" alt="Company name" class="logotitle"/>
+        </div>
+        <div class="tabs">
+            <a href="#">POOLS</a>
+            <a href="#">GOVERNANCE</a>
+            <a href="#">DOCS</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="popup" >
+            <button class="walletbtn" onclick="myWallet()">CONNECT WALLET</button> 
+        </div>
+    </div>
+</header>
+
+
+ <!-- ----------------- website  description title and description subtitle ------------------ -->
+<div class="description">
+<div class="text-center title">
+    <p>Florence Finance is connecting</p> 
+    <p>DeFi to real-world lending</p>
+</div>
+<div class="thesubtitle">
+    <p class="text-center subtitle">Current capital deployed <span>$225,047,595</span> at an interest of <span>1.85%</span></p>
+</div>
+</div>
+
+ <!-- -------------------------------The three Pools cards ------------------------------------------ -->
+
+<div class="pools">
+    <p>Pools</p>
+    <div class="cards">
+        <div class="card">
+            <p class="cardtitle">Junior 100% collateralized</p>
+            <div class="cardlist" >
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">TVL</div> <span class="text-right rightcol col-sm-6">5M EUR</span> 
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">APY</div> <span class="text-right rightcol col-sm-6">20%</span>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">Earn</div> <span class="text-right rightcol col-sm-6">USDC & MDC</span>
+               </div>
+               <hr>
+               <div class="row">                
+                    <div class="text-left leftcol col-sm-6">Participants</div> <span class="text-right rightcol col-sm-6">100</span>
+               </div>
+               <hr>
+
+               <button class="depositbtn">DEPOSIT</button>
+               <hr class="lastline">
+               <div class="detailsarrow">
+                 <h3 class="details   ">DETAILS</h3> 
+                 <img src = "./images/Path 3.svg" alt="down pointing arrow" class="caret"/>
+                </div>
+             
+
+            </div>
+        </div>
+
+        <div class="card middlecard middlecardfill">
+            <p class="cardtitle">Senior 100% collateralized</p>
+            <div class="cardlist" >
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">TVL</div> <span class="text-right rightcol col-sm-6">5M EUR</span> 
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">APY</div> <span class="text-right rightcol col-sm-6">20%</span>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">Earn</div> <span class="text-right rightcol col-sm-6">USDC & MDC</span>
+               </div>
+               <hr>
+               <div class="row">                
+                    <div class="text-left leftcol col-sm-6">Participants</div> <span class="text-right rightcol col-sm-6">100</span>
+               </div>
+               <hr>
+
+               <button class="depositbtn">DEPOSIT</button>
+               <hr class="lastline">
+            </div>
+        </div>
+
+        <div class="card">
+            <p class="cardtitle">TBD</p>
+            <div class="cardlist" >
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">TVL</div> <span class="text-right rightcol col-sm-6">5M EUR</span> 
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">APY</div> <span class="text-right rightcol col-sm-6">20%</span>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="text-left leftcol col-sm-6">Earn</div> <span class="text-right rightcol col-sm-6">USDC & MDC</span>
+               </div>
+               <hr>
+               <div class="row">                
+                    <div class="text-left leftcol col-sm-6">Participants</div> <span class="text-right rightcol col-sm-6">100</span>
+               </div>
+               <hr>
+
+               <button class="depositbtn">DEPOSIT</button>
+               <hr class="lastline">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- -------------------------------- footer: logo and links --------------------------------- -->
+
+<footer>
+    <div class="allfooter text-left">
+
+        <div class="logobottom">
+            <img src = "./images/Florencelogo_purple Copy.svg" alt="Company Logo" />
+        </div>
+
+        <div class="allfooterlinks">
+            <div>
+                <h3 class="footertitles">Protocol</h3>
+                <div class="footeroptions">
+                    <h3>Pools</h3>
+                    <h3 style="color: #ffffff;">Prices</h3>
+                    <h3>Developers</h3>
+                    <h3>Docs</h3>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footertitles">Governance</h3>
+                <div class="footeroptions">
+                    <h3>Overview</h3>
+                    <h3>MDC</h3>
+                    <h3>Leaderboard</h3>
+                    <h3>Forums</h3>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footertitles">Company</h3>
+                <div class="footeroptions">
+                    <h3>About</h3>
+                    <h3>Careers</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- *********** ----------------------Modal wallet card:----------------------- ********** -->
+
+
+<div class="popupcard" id="modalwallet">
+    <div>
+        <img src = "./images/Group.svg" alt="x-mark" onclick="closeWallet()" class="xmark" />
+    </div>
+    <div class="cardlogo">
+        <img src = "./images/Florencelogo_purple Copy.svg" alt="Company Logo" />
+    </div>
+
+    <div class="walletcardtitle">
+        <h3>Connect Wallet</h3>
+    </div>
+    <div class="walletcardsubtitle">
+        <h4>To start using Florence Finance</h4>
+    </div>
+    <hr style="margin: 28px 0px 0px -1px;" class="walletline">
+
+    <div class="modalcardlist" >
+       <div class="cardrow">
+          <div  class="icon">
+            <img src = "./images/Oval.svg" alt="Company Logo" class="oval" />
+            <img src = "./images/Metamask.svg" alt="Company Logo" class="icon1" />
+          </div>
+          <h3 class="cardrowtext">Metamask</h3> 
+          <div class="rightarrow">
+            <img src = "./images/linePath.svg" alt="line" class="linearrow" />
+            <img src = "./images/arrowPath.svg" alt="arrow" class="pointarrow" />
+          </div>
+        </div>
+        <div class="ledgerbackground">
+            <hr style="margin: 15px 0px 0px -1px; " class="walletline">
+
+            <div class="cardrow cardrowmarginledger">
+                <div  class="icon" style="margin-left:1px;">
+                <img src = "./images/Oval.svg" alt="Company Logo" class="oval" />
+                <img src = "./images/icn-ledger.svg" alt="Company Logo" class="icon2" />
+                </div>
+                <h3 class="cardrowtext" style="margin-right: 25px;">Ledger</h3> 
+                <div class="rightarrow" style="padding-right:1px;">
+                <img src = "./images/whitelinePath.svg" alt="line" class="linearrow" />
+                <img src = "./images/whitearrowPath.svg" alt="arrow" class="pointarrow" />
+                </div>
+            </div>
+        </div>
+          <hr style="margin: 16px 0px 0px -26px; " class="walletline">
+
+          <div class="cardrow cardrowmargin">
+            <div style="padding-top:1px;" class="icon">
+              <img src = "./images/Oval.svg" alt="Company Logo" class="oval" />
+              <img src = "./images/icn-wallet-connect.svg" alt="Company Logo" class="icon3" />
+            </div>
+            <h3 class="cardrowtext" style="padding-top: 4px; margin-right: 25px;">Wallet</h3> 
+            <div class="rightarrow" style="margin-top: -2px;">
+              <img src = "./images/linePath.svg" alt="line" class="linearrow" />
+              <img src = "./images/arrowPath.svg" alt="arrow" class="pointarrow" />
+            </div>
+          </div>
+          <hr style="margin: 15px 0px 0px -26px; " class="walletline">
+
+          <div class="cardrow cardrowmargin">
+            <div style="margin-top: -1px;" class="icon">
+              <img src = "./images/Oval.svg" alt="Company Logo" class="oval" />
+              <img src = "./images/icn-coinbase-wallet.svg" alt="Company Logo" class="icon4" />
+            </div>
+            <h3 class="cardrowtext" style="padding-bottom: 1px; margin-right: 8px;">Coinbase</h3> 
+            <div class="rightarrow" style="margin-top: 1px;">
+              <img src = "./images/linePath.svg" alt="line" class="linearrow" />
+              <img src = "./images/arrowPath.svg" alt="arrow" class="pointarrow" />
+            </div>
+          </div>
+          <hr style="margin: 17px 0px 0px -26px; " class="walletline">
+      
+          <div class=bottomtext>
+              <h3>
+                By connecting, I accept Florence Finance’s 
+                <span class="terms">Terms of Service</span>
+              </h3>
+          </div>
+     
+
+    </div>
+</div>
+
+ <!-- ----------------------- dark background shadow while on pop-up modal card view ----------------- -->
+<div id="shadow"></div>
+
+
+</body>
+</html>

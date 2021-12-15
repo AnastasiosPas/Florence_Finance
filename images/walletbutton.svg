@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="53px" viewBox="0 0 175 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>button copy</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#4352FF" offset="0%"></stop>
+            <stop stop-color="#4027C3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Onepager" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-1225.000000, -20.000000)">
+            <g id="button-copy" transform="translate(1225.000000, 20.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="175" height="53" rx="8"></rect>
+                <text id="Connect-wallet" font-family="NunitoSans-ExtraBold, Nunito Sans" font-size="12" font-weight="700" letter-spacing="0.923076923" fill="#FFFFFF">
+                    <tspan x="25.4664615" y="30">CONNECT WALLET</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
