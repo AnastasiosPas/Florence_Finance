@@ -1,11 +1,19 @@
 body {
   position: absolute;
-  background: url("../images/Rectangle.jpg") no-repeat;
+  background: url("../images/Rectangle.jpg") top right no-repeat;
   background-color: #112f63;
   background-size: 1441px;
   width: 1440px;
 }
 
+/* Safari 11+  -- I found 1 pixel difference between chrome and safari as seen in my computer*/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .cards {
+      margin-left: 1px;
+    }
+  }
+}
 .header {
   width: 100%;
   display: grid;
