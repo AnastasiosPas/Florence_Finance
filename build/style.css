@@ -6,14 +6,6 @@ body {
   width: 1440px;
 }
 
-/* Safari 11+  -- I found 1 pixel difference between chrome and safari as seen in my computer*/
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .cards {
-      margin-left: 1px;
-    }
-  }
-}
 .header {
   width: 100%;
   display: grid;
@@ -22,7 +14,7 @@ body {
   padding: 0px 41px 0px 40px;
 }
 
-.headerFontStyle, .details, .depositbtn, .walletbtn, a {
+.headerFontStyle, .details, .depositbtn, .walletbtn, .tabs a {
   font-size: 12px;
   font-weight: 800;
   color: #ffffff;
@@ -52,17 +44,15 @@ body {
   justify-self: center;
   margin-left: -76px;
 }
-
-a {
+.tabs a {
+  font-family: "Nunito Sans";
   font-style: normal;
   letter-spacing: 0.923077px;
 }
-
-a:nth-child(2) {
+.tabs a:nth-child(2) {
   letter-spacing: 0px;
 }
-
-a:hover {
+.tabs a:hover {
   text-decoration: none;
   color: #f2f5fd;
   transform: scale(1.03);
@@ -74,6 +64,7 @@ a:hover {
   width: 175px;
   height: 53px;
   border-radius: 8px;
+  font-family: "Nunito Sans";
   border-style: none;
   margin-top: 20px;
   cursor: pointer;
@@ -95,8 +86,8 @@ a:hover {
   line-height: 56px;
   vertical-align: top;
   letter-spacing: 0px;
+  font-family: "Nunito Sans";
 }
-
 .title p {
   height: 56px;
   margin: 0px;
@@ -117,7 +108,6 @@ a:hover {
   letter-spacing: 0px;
   transition: 2s;
 }
-
 .subtitle span {
   color: #95d6f3;
 }
@@ -193,7 +183,6 @@ li {
   margin: 0px;
   padding: 41px 25px 0px 25px;
 }
-
 .cardlist .leftcol {
   color: #a9a9d5;
   font-family: "Mukta Vaani";
@@ -202,7 +191,6 @@ li {
   margin-bottom: 29px;
   letter-spacing: 0px;
 }
-
 .cardlist .rightcol {
   font-family: "Mukta Vaani";
   font-weight: 500;
@@ -265,6 +253,7 @@ hr, .lastline {
 }
 
 .details {
+  font-family: "Nunito Sans";
   color: #5b87ff;
   height: 16px;
   max-width: fit-content;
@@ -330,7 +319,7 @@ hr, .lastline {
   justify-content: space-between;
   margin-left: 156.31px;
   position: relative;
-  width: 576px;
+  width: 530px;
   align-self: flex-start;
   margin-top: -2px;
 }
@@ -348,14 +337,13 @@ hr, .lastline {
   align-self: flex-start;
 }
 
-.footeroptions {
+.footerlinks {
   position: relative;
   margin-top: 9px;
   width: 170px;
   height: 136px;
 }
-
-.footeroptions h3 {
+.footerlinks h3 {
   font-family: "Mukta Vaani";
   font-weight: 400;
   font-size: 16px;
@@ -368,8 +356,7 @@ hr, .lastline {
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
-
-.footeroptions h3:hover {
+.footerlinks h3:hover {
   color: #ffffff;
 }
 
@@ -386,7 +373,7 @@ hr, .lastline {
 
 #modalwallet {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 188px;
   left: 530px;
   width: 376px;
@@ -413,7 +400,6 @@ hr, .lastline {
   position: relative;
   margin: 42px 162.31px 0px 166px;
 }
-
 .cardlogo img {
   width: 45.69px;
   height: 46px;
@@ -425,7 +411,6 @@ hr, .lastline {
   width: 128px;
   height: 34px;
 }
-
 .walletcardtitle h3 {
   font-family: "Mukta Vaani";
   font-size: 20px;
@@ -440,7 +425,6 @@ hr, .lastline {
   width: 226px;
   height: 27px;
 }
-
 .walletcardsubtitle h4 {
   font-family: "Mukta Vaani";
   font-size: 16px;
@@ -565,7 +549,6 @@ hr, .lastline {
   height: 28px;
   margin-top: 23px;
 }
-
 .bottomtext h3,
 .bottomtext span {
   font-family: "Mukta Vaani";
@@ -575,7 +558,6 @@ hr, .lastline {
   line-height: 14px;
   color: #a9a9d5;
 }
-
 .bottomtext span {
   color: #5b87ff;
 }
@@ -610,6 +592,220 @@ hr, .lastline {
   }
   to {
     opacity: 1;
+  }
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .cards {
+      margin-left: 1px;
+    }
+
+    .leftcol,
+.rightcol {
+      width: 160px;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+
+  .header {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 0 0 0 40px;
+  }
+
+  .logoandname {
+    align-items: center;
+    margin: 28px 0px 0px -40px;
+  }
+
+  .tabs {
+    margin-top: 39px;
+    padding-left: -12px;
+  }
+
+  .description {
+    position: absolute;
+    max-width: max-content;
+  }
+
+  .title {
+    top: 345px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .title p {
+    height: auto;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+  }
+
+  .subtitle {
+    position: relative;
+    top: 350px;
+    height: 40px;
+    width: auto;
+    margin: 0px auto;
+    font-family: "Mukta Vaani";
+    font-size: 20px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+  }
+
+  .pools {
+    position: relative;
+    top: 500px;
+    width: 380px;
+    height: auto;
+  }
+  .pools p {
+    margin-left: 12%;
+    width: 100px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    height: 1400px;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    height: 445px;
+  }
+  .card .cardtitle {
+    width: 300px;
+    margin-left: 24px;
+  }
+
+  .allfooter {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 600px;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+  }
+  .allfooter .logobottom {
+    visibility: hidden;
+  }
+
+  .allfooterlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    position: relative;
+    width: auto;
+    align-self: flex-start;
+  }
+
+  .footertitles {
+    width: 110px;
+  }
+
+  .footerlinks {
+    position: relative;
+    margin-top: 9px;
+    width: 110px;
+    height: 136px;
+  }
+
+  #modalwallet {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 1130px) and (min-width: 751px) {
+  body {
+    width: 100%;
+  }
+
+  .header {
+    grid-template-columns: auto;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 10px;
+  }
+
+  .logoandname {
+    align-items: center;
+    margin: 28px 0px 0px -40px;
+  }
+
+  .tabs {
+    margin-top: 39px;
+    padding-left: -12px;
+  }
+
+  .cards {
+    transform: scale(0.8);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 0;
+  }
+
+  .description {
+    transform: scale(0.8);
+    margin-top: 0px;
+  }
+
+  .subtitle {
+    max-width: 680px;
+    margin-top: 0px;
+  }
+
+  .pools {
+    position: relative;
+    margin-top: 50px;
+    top: 700px;
+    max-width: fit-content;
+    height: 1200;
+  }
+
+  .pools > p {
+    padding-left: 80px;
+    margin-top: -253px;
+    margin-bottom: -100px;
+  }
+
+  footer .allfooter {
+    width: auto;
+    padding-left: 30px;
+    margin-top: 100px;
+  }
+
+  #modalwallet {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+}
+@media screen and (min-width: 1131px) {
+  body {
+    width: 100%;
+  }
+
+  .pools {
+    max-width: 100%;
   }
 }
 

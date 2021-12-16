@@ -6,135 +6,8 @@ body {
   width: 1440px;
 }
 
-/* Safari 11+  -- I found 1 pixel difference between chrome and safari as seen in my computer*/
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .cards {
-      margin-left: 1px;
-    }
-  }
-}
-
-// ------------------------------------------------------------------------------------------------------------
-//-------------------------------------RESPONSIVE DESIGN STYLING ----------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-
-// @media screen and (max-width: 750px) {
-//   //--------------------------------------------------------------------max-width: 600px
-//   body {
-//     width: 100%;
-//   }
-//   .cards {
-//     text-align: center;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     margin-top: 100px;
-//   }
-
-//   .description {
-//     transform: scale(0.6);
-//     position: absolute;
-//     top: -150px;
-//     max-width: max-content;
-//   }
-//   .title p,
-//   .thesubtitle {
-//     position: relative;
-//     left: -360px;
-//     max-width: max-content;
-//   }
-//   footer .allfooter {
-//     width: auto;
-//     padding-left: 30px;
-//     margin-top: 600px;
-//   }
-//   .pools {
-//     position: relative;
-//     top: 700px;
-//     max-width: 500px;
-//     height: 2300px;
-//   }
-//   .modalwallet {
-//     display: none;
-//     position: fixed;
-//     top: 188px;
-//     left: 230px;
-//     width: 376px;
-//     height: 548px;
-//     z-index: 2;
-//     animation: fadeIn 0.5s;
-//   }
-//   // .pools > p {
-//   //   padding-left: 80px;
-//   //   margin-top: -253px;
-//   //   margin-bottom: -100px;
-//   //   padding-top: 150px;
-//   // }
-// }
-
-// @media screen and (max-width: 1130px) and (min-width: 751px) {
-//   //------------------------------------------------------------------------601px - 1130px
-//   body {
-//     width: 100%;
-//   }
-
-//   .cards {
-//     transform: scale(0.8);
-//     text-align: center;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//   }
-//   .tabs {
-//     padding-top: 70px;
-//   }
-//   .walletbtn {
-//     margin-top: 50px;
-//   }
-//   .description {
-//     transform: scale(0.8);
-//   }
-//   .subtitle {
-//     max-width: 680px;
-//   }
-//   footer .allfooter {
-//     width: auto;
-//     padding-left: 30px;
-//     margin-top: 300px;
-//   }
-//   .pools {
-//     position: relative;
-//     top: 700px;
-//     max-width: fit-content;
-//     height: 1200;
-//   }
-//   .pools > p {
-//     padding-left: 80px;
-//     margin-top: -253px;
-//     margin-bottom: -100px;
-//   }
-//   .modalwallet {
-//     display: none;
-//     position: fixed;
-//     top: 188px;
-//     left: 230px;
-//     width: 376px;
-//     height: 548px;
-//     z-index: 2;
-//     animation: fadeIn 0.5s;
-//   }
-// }
-
-// @media screen and (min-width: 1131px) {
-//   //-----------------------------------------------------------------------min-width: 1001px
-//   body {
-//     width: 100%;
-//   }
-//   .pools {
-//     max-width: 100%;
-//   }
-// }
+$nunito: 'Nunito Sans';
+$vanni: 'Mukta Vaani';
 
 // ----------------------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------------------------------------
@@ -177,22 +50,22 @@ body {
   justify-content: space-between;
   justify-self: center;
   margin-left: -76px;
-}
+  a {
+    @extend .headerFontStyle;
+    font-family: $nunito;
 
-a {
-  @extend .headerFontStyle;
-  font-style: normal;
-  letter-spacing: 0.923077px;
-}
+    font-style: normal;
+    letter-spacing: 0.923077px;
+  }
 
-a:nth-child(2) {
-  letter-spacing: 0px;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #f2f5fd;
-  transform: scale(1.03);
+  a:nth-child(2) {
+    letter-spacing: 0px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #f2f5fd;
+    transform: scale(1.03);
+  }
 }
 
 // -----Connect Modal Wallet Button------
@@ -203,6 +76,8 @@ a:hover {
   height: 53px;
   border-radius: 8px;
   @extend .headerFontStyle;
+  font-family: $nunito;
+
   border-style: none;
   margin-top: 20px;
   cursor: pointer;
@@ -225,11 +100,11 @@ a:hover {
   line-height: 56px;
   vertical-align: top;
   letter-spacing: 0px;
-}
-
-.title p {
-  height: 56px;
-  margin: 0px;
+  font-family: $nunito;
+  p {
+    height: 56px;
+    margin: 0px;
+  }
 }
 
 .subtitle {
@@ -238,7 +113,7 @@ a:hover {
   height: 111px;
   width: 981px;
   margin: 0px auto;
-  font-family: 'Mukta Vaani';
+  font-family: $vanni;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -246,17 +121,16 @@ a:hover {
   color: #5b87ff;
   letter-spacing: 0px;
   transition: 2s;
-}
-
-.subtitle span {
-  color: #95d6f3;
+  span {
+    color: #95d6f3;
+  }
 }
 
 .subtitle:hover {
   transform: scale(1.2);
 }
-// ------- The three Pools cards ------------------------------------------------------
 
+// ------- The three Pools cards ------------------------------------------------------
 .pools {
   position: relative;
   top: 798px;
@@ -268,7 +142,7 @@ a:hover {
 .pools > p {
   height: 61px;
   width: 516px;
-  font-family: 'Nunito Sans';
+  font-family: $nunito;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0px;
@@ -305,7 +179,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //width: 1191px;
 }
 
 .cardtitle {
@@ -314,7 +187,7 @@ li {
   height: 40px;
   width: 265px;
   color: #ffffff;
-  font-family: 'Mukta Vaani';
+  font-family: $vanni;
   font-weight: 500;
   font-size: 24px;
   letter-spacing: normal;
@@ -326,25 +199,24 @@ li {
 .cardlist {
   margin: 0px;
   padding: 41px 25px 0px 25px;
-}
+  .leftcol {
+    color: #a9a9d5;
+    font-family: $vanni;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 29px;
+    letter-spacing: 0px;
+  }
 
-.cardlist .leftcol {
-  color: #a9a9d5;
-  font-family: 'Mukta Vaani';
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 29px;
-  letter-spacing: 0px;
-}
-
-.cardlist .rightcol {
-  font-family: 'Mukta Vaani';
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: #ffffff;
-  vertical-align: top;
-  letter-spacing: 0px;
+  .rightcol {
+    font-family: $vanni;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    vertical-align: top;
+    letter-spacing: 0px;
+  }
 }
 
 hr {
@@ -357,7 +229,7 @@ hr {
 }
 
 .depositbtn {
-  font-family: 'Nunito Sans';
+  font-family: $nunito;
   @extend .headerFontStyle;
   font-weight: 800;
   letter-spacing: normal;
@@ -402,6 +274,7 @@ hr {
 
 .details {
   @extend .headerFontStyle;
+  font-family: $nunito;
   color: #5b87ff;
   height: 16px;
   max-width: fit-content;
@@ -450,7 +323,7 @@ hr {
     hsla(218, 71%, 23%, 0.1) 100%
   );
   background-color: #112f63;
-  background-blend-mode: screen;
+  background-blend-mode: screen; // very usefull property!!!
 }
 
 // ------------- Footer - logo and links ---------------------------------------
@@ -476,7 +349,7 @@ hr {
   justify-content: space-between;
   margin-left: 156.31px;
   position: relative;
-  width: 576px;
+  width: 530px;
   align-self: flex-start;
   margin-top: -2px;
 }
@@ -485,7 +358,7 @@ hr {
   position: relative;
   width: 170px;
   height: 27px;
-  font-family: 'Mukta Vaani';
+  font-family: $vanni;
   font-weight: 600;
   font-size: 16px;
   line-height: 34px;
@@ -494,29 +367,28 @@ hr {
   align-self: flex-start;
 }
 
-.footeroptions {
+.footerlinks {
   position: relative;
   margin-top: 9px;
   width: 170px;
   height: 136px;
-}
+  h3 {
+    font-family: $vanni;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #a9a9d5;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
 
-.footeroptions h3 {
-  font-family: 'Mukta Vaani';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-  color: #a9a9d5;
-  text-align: left;
-  vertical-align: top;
-  padding: 0;
-  margin: 0;
-  transition: all 0.1s ease-in-out;
-  cursor: pointer;
-}
-
-.footeroptions h3:hover {
-  color: #ffffff;
+  h3:hover {
+    color: #ffffff;
+  }
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -536,7 +408,7 @@ hr {
 
 #modalwallet {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 188px;
   left: 530px;
   width: 376px;
@@ -562,11 +434,10 @@ hr {
 .cardlogo {
   position: relative;
   margin: 42px 162.31px 0px 166px;
-}
-
-.cardlogo img {
-  width: 45.69px;
-  height: 46px;
+  img {
+    width: 45.69px;
+    height: 46px;
+  }
 }
 
 .walletcardtitle {
@@ -574,14 +445,13 @@ hr {
   margin: 18px 123px 0px 123px;
   width: 128px;
   height: 34px;
-}
-
-.walletcardtitle h3 {
-  font-family: 'Mukta Vaani';
-  font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  vertical-align: center;
+  h3 {
+    font-family: $vanni;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    vertical-align: center;
+  }
 }
 
 .walletcardsubtitle {
@@ -589,16 +459,15 @@ hr {
   margin: -9px 73px 0px 75px;
   width: 226px;
   height: 27px;
-}
-
-.walletcardsubtitle h4 {
-  font-family: 'Mukta Vaani';
-  font-size: 16px;
-  font-weight: 500;
-  color: #a9a9d5;
-  vertical-align: top;
-  letter-spacing: 0.5px;
-  vertical-align: top;
+  h4 {
+    font-family: $vanni;
+    font-size: 16px;
+    font-weight: 500;
+    color: #a9a9d5;
+    vertical-align: top;
+    letter-spacing: 0.5px;
+    vertical-align: top;
+  }
 }
 
 .oval {
@@ -698,7 +567,7 @@ hr {
 }
 
 .cardrowtext {
-  font-family: 'Mukta Vaani';
+  font-family: $vanni;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0px;
@@ -714,20 +583,18 @@ hr {
   width: 248px;
   height: 28px;
   margin-top: 23px;
-}
-
-.bottomtext h3,
-.bottomtext span {
-  font-family: 'Mukta Vaani';
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 14px;
-  color: #a9a9d5;
-}
-
-.bottomtext span {
-  color: #5b87ff;
+  h3,
+  span {
+    font-family: $vanni;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 14px;
+    color: #a9a9d5;
+  }
+  span {
+    color: #5b87ff;
+  }
 }
 
 #shadow {
@@ -763,5 +630,215 @@ hr {
   }
   to {
     opacity: 1;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+//-------------------------------------RESPONSIVE DESIGN STYLING ----------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+
+// I found 1 pixel difference between chrome and safari as seen in my computer...
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .cards {
+      margin-left: 1px;
+    }
+    .leftcol,
+    .rightcol {
+      width: 160px;
+    }
+  }
+}
+
+//------------------------------------------ max750x---------------------------------
+
+@media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 0 0 0 40px;
+  }
+  .logoandname {
+    align-items: center;
+    margin: 28px 0px 0px -40px;
+  }
+  .tabs {
+    margin-top: 39px;
+    padding-left: -12px;
+  }
+
+  .description {
+    position: absolute;
+    max-width: max-content;
+  }
+  .title {
+    top: 345px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 30px;
+    line-height: 30px;
+    p {
+      height: auto;
+      margin: 0px;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      border-radius: 3px;
+    }
+  }
+
+  .subtitle {
+    position: relative;
+    top: 350px;
+    height: 40px;
+    width: auto;
+    margin: 0px auto;
+    font-family: $vanni;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 3px;
+  }
+
+  .pools {
+    position: relative;
+    top: 500px;
+    width: 380px;
+    height: auto;
+    p {
+      margin-left: 12%;
+      width: 100px;
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    height: 1400px;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+  .card {
+    height: 445px;
+    .cardtitle {
+      width: 300px;
+      margin-left: 24px;
+    }
+  }
+  .allfooter {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 600px;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+    .logobottom {
+      visibility: hidden;
+    }
+  }
+
+  .allfooterlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    position: relative;
+    width: auto;
+    align-self: flex-start;
+  }
+  .footertitles {
+    width: 110px;
+  }
+  .footerlinks {
+    position: relative;
+    margin-top: 9px;
+    width: 110px;
+    height: 136px;
+  }
+  #modalwallet {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+}
+
+//----------------------------------------------601px - 1130px--------------------------------
+@media screen and (max-width: 1130px) and (min-width: 751px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    grid-template-columns: auto;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .logoandname {
+    align-items: center;
+    margin: 28px 0px 0px -40px;
+  }
+  .tabs {
+    margin-top: 39px;
+    padding-left: -12px;
+  }
+
+  .cards {
+    transform: scale(0.8);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 0;
+  }
+
+  .description {
+    transform: scale(0.8);
+    margin-top: 0px;
+  }
+  .subtitle {
+    max-width: 680px;
+    margin-top: 0px;
+  }
+  .pools {
+    position: relative;
+    margin-top: 50px;
+    top: 700px;
+    max-width: fit-content;
+    height: 1200;
+  }
+  .pools > p {
+    padding-left: 80px;
+    margin-top: -253px;
+    margin-bottom: -100px;
+  }
+  footer .allfooter {
+    width: auto;
+    padding-left: 30px;
+    margin-top: 100px;
+  }
+
+  #modalwallet {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+}
+
+//-----------------------------------------------min-width: 1001px---------------------------
+@media screen and (min-width: 1131px) {
+  body {
+    width: 100%;
+  }
+  .pools {
+    max-width: 100%;
   }
 }
