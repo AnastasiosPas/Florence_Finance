@@ -1,9 +1,9 @@
 body {
   position: absolute;
-  background: url('../images/Rectangle.png') top left no-repeat;
-  width: 1441px;
-  height: 809.56px;
+  background: url('../images/Rectangle.jpg') no-repeat;
   background-color: #112f63;
+  background-size: 1441px;
+  width: 1440px;
 }
 
 // ------------------------------------------------------------------------------------------------------------
@@ -221,7 +221,6 @@ a:hover {
 .title p {
   height: 56px;
   margin: 0px;
-  font-weight: 700;
 }
 
 .subtitle {
@@ -297,6 +296,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  //width: 1191px;
 }
 
 .cardtitle {
@@ -522,6 +522,7 @@ hr {
   border: 2px solid #4352ff;
   border-radius: 10px;
   background-color: #112f63;
+  margin-left: 1px;
 }
 
 #modalwallet {
