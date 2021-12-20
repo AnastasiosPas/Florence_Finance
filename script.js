@@ -11,4 +11,4 @@ const closeWallet = function() {
 }
 
 
-  module.exports = { myWallet, closeWallet };
+  //module.exports = { myWallet, closeWallet };
