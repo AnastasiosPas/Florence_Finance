@@ -1,6 +1,6 @@
 body {
   position: absolute;
-  background: url('../images/Rectangle.jpg') top right no-repeat;
+  background: url('../images/Rectangle.jpg') top left no-repeat;
   background-color: #112f63;
   background-size: 1441px;
   width: 1440px;
@@ -14,7 +14,7 @@ $vanni: 'Mukta Vaani';
 // ----------------------------------   Header design, logo tabs and wallet button --------------------------------------
 
 .header {
-  width: 100%;
+  width: 1440px;
   display: grid;
   grid-template-columns: 249px 1fr 175px;
   justify-content: space-between;
@@ -659,6 +659,7 @@ hr {
     width: 100%;
   }
   .header {
+    width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
     justify-content: space-around;
@@ -773,14 +774,15 @@ hr {
 }
 
 //----------------------------------------------601px - 1130px--------------------------------
-@media screen and (max-width: 1130px) and (min-width: 751px) {
+@media screen and (max-width: 1400px) and (min-width: 751px) {
   body {
     width: 100%;
   }
   .header {
+    width: 100%;
     grid-template-columns: auto;
     justify-content: space-around;
-    padding: 0;
+    padding: 0 0 0 40px;
     margin-top: 10px;
   }
   .logoandname {
@@ -840,12 +842,15 @@ hr {
   }
 }
 
-//-----------------------------------------------min-width: 1001px---------------------------
-@media screen and (min-width: 1131px) {
+@media screen and (min-width: 1445px) {
   body {
+    position: absolute;
+    background: url('../images/Rectangle.jpg') top left no-repeat;
+    background-color: #112f63;
+    background-size: 100%;
     width: 100%;
   }
-  .pools {
-    max-width: 100%;
+  .header {
+    width: 100%;
   }
 }
